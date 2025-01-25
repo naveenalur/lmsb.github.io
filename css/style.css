@@ -1180,6 +1180,10 @@ h3 {
     padding: 12px 0;
   }
 }
+.logo a {
+  display: flex; /* Use flexbox for easy horizontal alignment */
+  align-items: center; /* Vertically center the image and heading */
+}
 
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
