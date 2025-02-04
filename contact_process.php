@@ -1,6 +1,6 @@
 <?php
 
-    $to = "spn8@spondonit.com";
+    $to = "naveena.am95@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -33,5 +33,22 @@
 	$body .= "</body></html>";
 
     $send = mail($to, $subject, $body, $headers);
+	
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $to = "your-email@example.com"; // Replace with your email address
+    $headers = "From: " . $email;
+    $body = "Name: $name\nEmail: $email\nSubject: $subject\n\nMessage:\n$message";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Email successfully sent.";
+    } else {
+        echo "Email sending failed.";
+    }
+}
 
 ?>

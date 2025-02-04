@@ -3,12 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Charifit</title>
+    <title>LMS</title>
+    <style>
+        .modal-content {
+            border-radius: 10px;
+        }
+        #modalImage { /* Style for the image in the modal */
+            max-width: 200px; /* Adjust as needed */
+            height: auto;
+            float: left; /* Image to the left */
+            margin-right: 20px; /* Add some space to the right */
+        }
+
+        #modalDetails { /* Style for the text details next to the image */
+            overflow: hidden; /* Clear float */
+        }
+    </style>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+    <!-- <link rel="manifest" href="site.webmanifest"> -->    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/lmslogo/lms_favicon-32x32.png"
+    />
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -23,17 +41,18 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/slicknav.css" />
     <link rel="stylesheet" href="css/style.css" />
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+ <style>
+  a {
+    text-decoration: none !important;
+  }
+</style>
   </head>
 
   <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
+ 
 
     <!-- header-start -->
     <header>
@@ -98,21 +117,22 @@
                   <nav>
                     <ul id="navigation">
                       <li><a href="index.html">home</a></li>
+                        <li><a href="Gallary.html">Gallery</a></li>
                       <li><a href="About.html">About</a></li>
-                      <li>
+                      <!-- <li>
                         <a href="#">blog <i class="ti-angle-down"></i></a>
                         <ul class="submenu">
                           <li><a href="blog.html">blog</a></li>
                           <li><a href="single-blog.html">single-blog</a></li>
                         </ul>
-                      </li>
-                      <li>
+                      </li> -->
+                      <!-- <li>
                         <a href="#">pages <i class="ti-angle-down"></i></a>
                         <ul class="submenu">
                           <li><a href="elements.html">elements</a></li>
                           <li><a href="Cause.html">Cause</a></li>
                         </ul>
-                      </li>
+                      </li> -->
                       <li><a href="contact.html">Contact</a></li>
                     </ul>
                   </nav>
@@ -142,6 +162,8 @@
           <div class="col-xl-12">
             <div class="bradcam_text text-center">
               <h3>About US</h3>
+              <h2>We work for the empowerment of women, children, and the elderly, as well as the development of urban homeless people.</h2>
+              <p>L.M.S. Charitable Trust is a non-profit, non-political and development organization. It has been working with multi sectoral communities without distinction of caste, creed and community in Bangalore Urban and Kolar Districts. It has been working for development of the most marginalized and vulnerable sections of the society. The basic objective of L.M.S. Charitable Trust is to introduce experiments and innovations in development, economic and employment activities of education, women empowerment and childcare. The basic approach is to implement development programs based on the felt needs of the people with an effort to mobilize people’s participation for individuals and community development.</p>
             </div>
           </div>
         </div>
@@ -161,7 +183,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-4 col-md-6">
-            <div class="single_volenteer">
+            <div class="single_volenteer" data-bs-toggle="modal" data-bs-target="#anitaModal" data-name="Dr. Anita K N" data-title="President" data-facebook="https://www.facebook.com/anitha.anithakn.7">
               <div class="volenteer_thumb">
                 <img src="img/members/anita.jpg" alt="" />
               </div>
@@ -191,9 +213,30 @@
               </div>
             </div>
           </div>
+      <div class="modal fade" id="anitaModal" tabindex="-1" aria-labelledby="anitaModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg"> 
+       <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="anitaModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="img/members/anita.jpg" alt="Volunteer Image"> <div id="modalDetails">
+                    <p id="modalTitle"><strong>Dr. Anitha K N</strong><br/><p>President</p>
+                  </p>
+                    <p id="modalDescription">A seasoned professional with a BA qualification, brings over a decade of dedicated service in the social sector, showcasing expertise honed over 18 years with Gilgal Charitable Trust. With a diverse background, she has excelled as a Project Manager for 5 years and as a Network Cluster Coordinator for 6 years, collaborating with 14 NGOs. An active contributor to various committees and boards, including IMPACT India and FEVOURD-K, she demonstrates a commitment to governance and compliance, serving as a member of multiple committees such as the Air Force Internal Complaint Committee and BBMP ICC Committee.
+</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
 
+</div>
+    </div>
           <div class="col-lg-4 col-md-6">
-            <div class="single_volenteer">
+            <div class="single_volenteer" data-bs-toggle="modal" data-bs-target="#sampathModal" data-name="Dr.Sampath T D" data-title="President" >
               <div class="volenteer_thumb">
                 <img src="img/members/Sampath_TD.jpeg" alt="" />
               </div>
@@ -215,14 +258,36 @@
                   </ul>
                 </div>
                 <div class="info_inner">
-                  <h4>Sampath T D</h4>
+                  <h4>Dr.Sampath T D</h4>
                   <p>Secretary</p>
                 </div>
               </div>
             </div>
           </div>
+
+<div class="modal fade" id="sampathModal" tabindex="-1" aria-labelledby="sampathModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg"> 
+       <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="sampathModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="img/members/Sampath_TD.jpeg" alt="Volunteer Image"> <div id="modalDetails">
+                    <p id="modalTitle"><strong> Dr.Sampath T D</strong>
+                     <p>Secretary</p></p>
+                    <p id="modalDescription">Dr. T.D. Sampath, an esteemed figure in the social sector with 25 years of experience, serves as Secretary and Executive Director of Gilgal Charitable Trust, Bengaluru. Holding a B.Com qualification, his dedication to service has been recognized through numerous accolades, including a Doctorate recognition in 2018 and the prestigious COVID Warrior title bestowed by Green Channel & Karuna Sevashrama, Bengaluru in 2022. With a quarter-century of commitment to the organization, Dr. Sampath's leadership and expertise continue to drive positive change in the community.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+</div>
+    </div>
           <div class="col-lg-4 col-md-6">
-            <div class="single_volenteer">
+            <div class="single_volenteer" data-bs-toggle="modal" data-bs-target="#manjunathModal"  data-title="Treasurer" >
               <div class="volenteer_thumb">
                 <img src="img/members/Manjunath.jpeg" alt="" />
               </div>
@@ -244,17 +309,39 @@
                   </ul>
                 </div>
                 <div class="info_inner">
-                  <h4>Manjunath M N</h4>
+                  <h4>Manjunath M</h4>
                   <p>Treasurer</p>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="modal fade" id="manjunathModal" tabindex="-1" aria-labelledby="manjunathModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg"> 
+       <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="manjunathModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="img/members/Manjunath.jpeg" alt="Volunteer Image"> <div id="modalDetails">
+                    <p id="modalTitle"><strong>Manjunath M</strong>
+                     <p>Treasurer</p></p>
+                    <p id="modalDescription">An equipped with a BA qualification, brings a wealth of expertise to his role as Treasurer of our NGO. With a decade of experience in the development sector, including roles as a Community Organizer and Program Coordinator, he excels in disaster management, community organization, entrepreneurship development training, and networking. His decade-long association with Gilgal Charitable Trust underscores his commitment to driving positive change and sustainable development within our community.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+</div>
+    </div>
         </div>
         <div class="pt-50">
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6">
-              <div class="single_volenteer">
+              <div class="single_volenteer" data-bs-toggle="modal" data-bs-target="#sureshModal"  data-title="Director">
                 <div class="volenteer_thumb">
                   <img src="img/members/Suresh.jpeg" alt="" />
                 </div>
@@ -282,9 +369,30 @@
                 </div>
               </div>
             </div>
+             <div class="modal fade" id="sureshModal" tabindex="-1" aria-labelledby="sureshModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg"> 
+       <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="sureshModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="img/members/Suresh.jpeg" alt="Volunteer Image"> <div id="modalDetails">
+                    <p id="modalTitle"><strong>Suresh K</strong>
+                     <p>Director</p></p>
+                    <p id="modalDescription">Our NGO director, brings a wealth of experience and expertise to our organization with a Bachelor's degree in Commerce. His entrepreneurial journey, spanning since 2004, reflects his dedication to business and community development. In the development sector, he has actively contributed by supporting health camps, participating in NGO programs, sponsoring social activities, and engaging in environmentally conscious initiatives such as planting and farming. Suresh's multifaceted background and commitment to social welfare greatly enrich our NGO's endeavors towards positive impact and sustainable growth.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+</div>
+    </div>
             <div class="col-lg-4 col-md-6">
               <div class="single_volenteer">
-                <div class="volenteer_thumb">
+                <div class="volenteer_thumb" data-bs-toggle="modal" data-bs-target="#ravichandirModal"  data-title="Director">
                   <img src="img/members/Ravichandir.jpeg" alt="" />
                 </div>
                 <div class="voolenteer_info d-flex align-items-end">
@@ -311,43 +419,33 @@
                 </div>
               </div>
             </div>
+             <div class="modal fade" id="ravichandirModal" tabindex="-1" aria-labelledby="ravichandirModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg"> 
+       <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="ravichandirModalLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="img/members/Ravichandir.jpeg" alt="Volunteer Image"> <div id="modalDetails">
+                    <p id="modalTitle"><strong>Suresh K</strong>
+                     <p>Director</p></p>
+                    <p id="modalDescription">Holding a BE qualification, serves as a Director of our NGO, leveraging his five years of experience in the IT sector. His expertise spans various domains, including technical knowledge, CSR initiatives, and involvement in the development sector, particularly in IT-related projects and corporate social responsibility endeavors. Additionally, he actively contributes to community welfare by visiting orphanages and advocating for environmental protection through initiatives like planting trees.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+</div>
+    </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="our_volunteer_area section_padding"></div>
-    <!-- Board Member starts  -->
 
-    <!-- latest_activites_area_start  -->
-    <!-- <div class="latest_activites_area">
-        <div class=" video_bg_1 video_activite  d-flex align-items-center justify-content-center">
-            <a class="popup-video" href="https://www.youtube.com/watch?v=MG3jGHnBVQs">
-                <i class="flaticon-ui"></i>
-            </a>
-        </div>
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-lg-7">
-                    <div class="activites_info">
-                        <div class="section_title">
-                            <h3> <span>Watch Our Latest  </span><br>
-                                Activities</h3>
-                        </div>
-                        <p class="para_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation.</p class="para_1">
-                        <p class="para_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation. tempor 
-                            incididunt  ut labore dolore magna aliqua. enim minim 
-                            veniam, quis nostrud exercitation.</p>
-                        <a href="#" data-scroll-nav="1" class="boxed-btn4">Donate Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- latest_activites_area_end  -->
+  
+    
 
     <!-- counter_area_start  -->
     <div class="counter_area pt-120">
@@ -362,8 +460,8 @@
                   <i class="flaticon-calendar"></i>
                 </div>
                 <div class="events">
-                  <h3 class="counter">120</h3>
-                  <p>Finished Event</p>
+                  <h3 class="counter">74</h3>
+                  <p>Health Check-up</p>
                 </div>
               </div>
             </div>
@@ -375,8 +473,8 @@
                   <i class="flaticon-heart-beat"></i>
                 </div>
                 <div class="events">
-                  <h3 class="counter">120</h3>
-                  <p>Finished Event</p>
+                  <h3 class="counter">730</h3>
+                  <p>Plants</p>
                 </div>
               </div>
             </div>
@@ -389,11 +487,11 @@
                 </div>
                 <div class="events">
                   <h3 class="counter">120</h3>
-                  <p>Finished Event</p>
+                  <p>Rescues</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
               <div
                 class="single_counter d-flex align-items-center justify-content-center"
               >
@@ -405,114 +503,13 @@
                   <p>Finished Event</p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
     <!-- counter_area_end  -->
 
-    <!-- our_volunteer_area_start  -->
-    <div class="our_volunteer_area section_padding">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="section_title text-center mb-55">
-              <h3><span>Our Volunteer</span></h3>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6">
-            <div class="single_volenteer">
-              <div class="volenteer_thumb">
-                <img src="img/volenteer/1.png" alt="" />
-              </div>
-              <div class="voolenteer_info d-flex align-items-end">
-                <div class="social_links">
-                  <ul>
-                    <li>
-                      <a href="#"> <i class="fa fa-facebook"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-twitter"></i> </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="info_inner">
-                  <h4>Sakil khan</h4>
-                  <p>Donner</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single_volenteer">
-              <div class="volenteer_thumb">
-                <img src="img/volenteer/2.png" alt="" />
-              </div>
-              <div class="voolenteer_info d-flex align-items-end">
-                <div class="social_links">
-                  <ul>
-                    <li>
-                      <a href="#"> <i class="fa fa-facebook"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-twitter"></i> </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="info_inner">
-                  <h4>Emran Ahmed</h4>
-                  <p>Volunteer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single_volenteer">
-              <div class="volenteer_thumb">
-                <img src="img/volenteer/3.png" alt="" />
-              </div>
-              <div class="voolenteer_info d-flex align-items-end">
-                <div class="social_links">
-                  <ul>
-                    <li>
-                      <a href="#"> <i class="fa fa-facebook"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                    </li>
-                    <li>
-                      <a href="#"> <i class="fa fa-twitter"></i> </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="info_inner">
-                  <h4>Sabbir Ahmed</h4>
-                  <p>Volunteer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- our_volunteer_area_end  -->
 
     <div data-scroll-index="1" class="make_donation_area section_padding">
@@ -526,79 +523,27 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <form action="#" class="donation_form">
-              <div class="row align-items-center">
-                <div class="col-md-4">
-                  <div class="single_amount">
-                    <div class="input_field">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1"
-                            >$</span
-                          >
-                        </div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="40,200"
-                          aria-label="Username"
-                          aria-describedby="basic-addon1"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <div class="single_amount">
-                    <div
-                      class="fixed_donat d-flex align-items-center justify-content-between"
-                    >
-                      <div class="select_prise">
-                        <h4>Select Amount:</h4>
-                      </div>
-                      <div class="single_doonate">
-                        <input
-                          type="radio"
-                          id="blns_1"
-                          name="radio-group"
-                          checked
-                        />
-                        <label for="blns_1">10</label>
-                      </div>
-                      <div class="single_doonate">
-                        <input
-                          type="radio"
-                          id="blns_2"
-                          name="radio-group"
-                          checked
-                        />
-                        <label for="blns_2">30</label>
-                      </div>
-                      <div class="single_doonate">
-                        <input
-                          type="radio"
-                          id="Other"
-                          name="radio-group"
-                          checked
-                        />
-                        <label for="Other">Other</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="donate_now_btn text-center">
-              <a href="#" class="boxed-btn4">Donate Now</a>
-            </div>
+            <p>
+              Make a generous donation to help us reach more beneficiaries.
+              <br />
+              <strong>Account Number:</strong> 920020033452190
+              <br />
+              <strong>Bank: </strong> Axis Bank
+              <br />
+              <strong>Branch: </strong> MG Road
+              <br />
+              <strong>IFSC Code: </strong>UTIB0000009
+              <hr/>
+             <i> All donations are eligible for tax savings under 80G.</i>
+            </p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Modals -->
+     
+
 
     <!-- footer_start  -->
     <footer class="footer">
@@ -666,7 +611,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-md-6 col-lg-3">
+            <!-- <div class="col-xl-3 col-md-6 col-lg-3">
               <div class="footer_widget">
                 <h3 class="footer_title">Top News</h3>
                 <ul class="news_links">
@@ -698,7 +643,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -732,6 +677,7 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
   </body>
