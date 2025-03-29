@@ -175,6 +175,7 @@
        <div class="row ">
   <div class="col-lg-12">
     <div class="owl-carousel owl-theme">
+      
       <div class="single_volenteer">
         <div class="volenteer_thumb">
            <a href="img/events/event1.png" class="image-popup"> 
@@ -190,6 +191,39 @@
           </a>
         </div>
       </div>
+       <div class="single_volenteer">
+        <div class="volenteer_thumb">
+             <a href="img/events/event2.png" class="image-popup">
+          <img src="img/events/event2.png" alt="" class="fixed-size2"/>
+          </a>
+     
+      </div>
+      </div>
+
+      <div class="single_volenteer">
+         
+           <div class="volenteer_thumb">
+             <a href="img/events/event3.jpeg" class="image-popup">
+          <img src="img/events/event3.jpeg" alt="" class="fixed-size2"/>
+          </a>
+        </div>
+        </div>
+         <div class="single_volenteer">
+         
+           <div class="volenteer_thumb">
+             <a href="img/events/event4.png" class="image-popup">
+          <img src="img/events/event4.png" alt="" class="fixed-size2"/>
+          </a>
+        </div>
+        </div>
+         <div class="single_volenteer">
+         
+           <div class="volenteer_thumb">
+             <a href="img/events/event5.jpeg" class="image-popup">
+          <img src="img/events/event5.jpeg" alt="" class="fixed-size2"/>
+          </a>
+        </div>
+        </div>
     
    
       <!-- Add more items as needed -->
@@ -391,6 +425,13 @@
         <div class="volenteer_thumb">
              <a href="img/volenteer/2.jpg" class="image-popup">
           <img src="img/volenteer/2.jpg" alt="" class="fixed-size2"/>
+          </a>
+        </div>
+      </div>
+        <div class="single_volenteer">
+        <div class="volenteer_thumb">
+             <a href="img/volenteer/Certificate.jpeg" class="image-popup">
+          <img src="img/volenteer/Certificate.jpeg" alt="" class="fixed-size2"/>
           </a>
         </div>
       </div>
@@ -621,13 +662,14 @@ $(document).ready(function() {
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+     center: true,
+    nav: false,
     responsive: {
       0: {
         items: 1
       },
       600: {
-        items: 2
+        items: 3
       }
     }
   });
